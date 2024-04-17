@@ -2,9 +2,9 @@
  Proyecto de creacion de una página/aplicación web con una tematica ecologísta para Ingenieria Web PUCV
 
 
-# EcoWeb
+# GrowYourThree
 
-EcoWeb es un sitio web dedicado a promover la conciencia ecológica y fomentar buenos hábitos ambientales. El objetivo del sitio es proporcionar una plataforma educativa y de recursos para aquellos interesados en mejorar su impacto ambiental.
+GrowYourThree es un sitio web dedicado a promover la conciencia ecológica y fomentar buenos hábitos ambientales. El objetivo del sitio es proporcionar una plataforma educativa y de recursos para aquellos interesados en mejorar su impacto ambiental.
 
 ## Características
 
