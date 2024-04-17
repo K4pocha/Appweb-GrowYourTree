@@ -3,3 +3,61 @@
 .was-validated .form-control:valid, .was-validated .form-control:invalid {
     background-image: none !important; /* Desactiva el ícono de fondo */
 }
+
+/* styles.css */
+body {
+    background-color: #F0EAD6; /* Beige para el fondo general de la página */
+    color: #795548; /* Marrón para el texto */
+}
+
+.navbar {
+    background-color: #D4E157; /* Verde claro para la barra de navegación */
+}
+
+.nav-link, .navbar-brand {
+    color: #4E342E; /* Marrón oscuro para enlaces para mayor contraste */
+}
+
+.btn-outline-success {  /* Botón de contorno CAF+E */
+    border-color: #3d4b88; /* Azul */
+    color: #3d4b88c9; /* Azul */
+}
+
+.btn-outline-success:hover {
+    background-color: #3d4b88; /* Azul */
+    color: #FFF; /* Blanco */
+}
+
+.btn-primary {
+    background-color: #3d4b88 !important; /* Azul */
+    color: #FFF !important; /* Blanco */
+}
+
+.modal-content {
+    background-color: #FFFFFF; /* Blanco para destacar los modales */
+    color: #795548; /* Marrón para el texto */
+}
+
+.link-primary {
+    color: #388E3C; /* Verde oscuro */
+}
+
+.link-primary:hover {
+    color: #1B5E20; /* Verde más oscuro */
+}
+
+
+/* Sobrescribir estilos de la barra de navegación de Bootstrap */
+.navbar, .navbar-light {
+    background-color: #8BC34A !important; /* Verde más suave */
+    color: #3E2723; /* Marrón oscuro para el texto */
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #3E2723 !important; /* Marrón oscuro para los enlaces */
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+    color: #1B5E20 !important; /* Verde más oscuro al pasar el mouse o enfocar */
+}
