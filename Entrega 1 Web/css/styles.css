@@ -1,0 +1,5 @@
+/* Sobrescribe los íconos de validación de Bootstrap para todos los campos del formulario */
+.form-control.is-valid, .form-control.is-invalid,
+.was-validated .form-control:valid, .was-validated .form-control:invalid {
+    background-image: none !important; /* Desactiva el ícono de fondo */
+}
