@@ -6,6 +6,11 @@
 
 
 /* styles.css */
+.navbar-brand img {
+    max-height: 200px; /* Ajustar segun se necesite */
+}
+
+
 body {
     background-color: #F0EAD6; /* Beige para el fondo general de la página */
     color: #795548; /* Marrón para el texto */
@@ -62,7 +67,7 @@ body {
     color: #1B5E20 !important; /* Verde más oscuro al pasar el mouse o enfocar */
 }
 
-/* Estilos para la página de Comunidades Ambientales */
+/* Estilos contenedores bootstrap y otros generales*/ 
 .container {
     max-width: 800px;
     margin: auto;

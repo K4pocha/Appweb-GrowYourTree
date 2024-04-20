@@ -5,6 +5,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const emailError = document.getElementById('emailError');
     const passwordError = document.getElementById('passwordError');
     const loginError = document.getElementById('loginError');
+    const adventureButton = document.getElementById('startAdventureButton');
+
+    updateAdventureButtonState();  // Actualiza el estado del botón al cargar la página
 
     loginForm.addEventListener('submit', function (event) {
         event.preventDefault();
@@ -45,8 +48,10 @@ document.addEventListener("DOMContentLoaded", function () {
             .then(users => {
                 const user = users.find(u => u.email === email && u.password === password);
                 if (user) {
+                    localStorage.setItem('isLoggedIn', true); // Guarda el estado de la sesión
                     localStorage.setItem('userEmail', user.email);
                     updateUI();
+                    updateAdventureButtonState();  // Actualiza el botón después del inicio de sesión
                     alert('Inicio de sesión exitoso');
                     bootstrap.Modal.getInstance(document.getElementById('loginModal')).hide();
                 } else {
@@ -57,5 +62,19 @@ document.addEventListener("DOMContentLoaded", function () {
                 console.error('Error al cargar los usuarios:', error);
                 loginError.textContent = 'Error al procesar la solicitud';
             });
+    }
+
+    function updateAdventureButtonState() {
+        if (localStorage.getItem('isLoggedIn')) {
+            adventureButton.textContent = "Buscar logros";
+            adventureButton.onclick = function () {
+                window.location.href = 'achievements.html'; // Redirecciona a la página de logros
+            };
+        } 
+        if (!localStorage.getItem('isLoggedIn')){
+            adventureButton.textContent = "¡Comienza tu aventura!";
+            adventureButton.setAttribute('data-bs-toggle', 'modal');
+            adventureButton.setAttribute('data-bs-target', '#loginModal');
+        }
     }
 });
