@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro - EcoWeb</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/session.js"></script>
+    <title>Calculadora de Emisiones CO2</title>
 </head>
 
 <body>
@@ -49,24 +51,39 @@
             </div>
         </nav>
     </header>
-    <main class="container mt-5">
-        <h2>Registro</h2>
-        <div id="container">
-            <form id="registerForm">
-                <div class="mb-3">
-                    <label for="regEmail" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="regEmail" required>
-                </div>
-                <div class="mb-3">
-                    <label for="regPassword" class="form-label">Contraseña</label>
-                    <input type="password" class="form-control" id="regPassword" required>
-                </div>
-                <button type="submit" class="btn btn-success">Registrarse</button>
-            </form>
-        </div>
-    </main>
+    <div class="container co2-calculator">
+        <h1>Calculadora de Emisiones de CO2</h1>
+        <form id="co2Form">
+            <div>
+                <label for="transport">Selecciona tu medio de transporte principal:</label>
+                <select id="transport" name="transport">
+                    <option value="auto">Auto</option>
+                    <option value="moto">Moto</option>
+                    <option value="bicicleta">Bicicleta</option>
+                    <option value="publico">Transporte público</option>
+                </select>
+            </div>
+            <div>
+                <label for="electricity">Consumo eléctrico mensual en kWh:</label>
+                <input type="number" id="electricity" name="electricity" required>
+            </div>
+            <div>
+                <label for="renewable">¿Utiliza energías renovables en el hogar?</label>
+                <input type="checkbox" id="renewable" name="renewable">
+            </div>
+            <div>
+                <label for="meat">Frecuencia semanal en el consumo de carnes:</label>
+                <input type="number" id="meat" name="meat" required>
+            </div>
+            <button type="button" onclick="calculateEmissions()">Calcular Emisiones</button>
+        </form>
+    </div>
 
+    <div id="result"></div>
+
+    <script src="js/co2_calculator.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>

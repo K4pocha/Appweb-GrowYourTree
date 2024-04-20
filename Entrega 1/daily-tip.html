@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro - EcoWeb</title>
+    <title>Consejo del Día</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/session.js"></script>
 </head>
-
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -49,24 +49,14 @@
             </div>
         </nav>
     </header>
-    <main class="container mt-5">
-        <h2>Registro</h2>
-        <div id="container">
-            <form id="registerForm">
-                <div class="mb-3">
-                    <label for="regEmail" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="regEmail" required>
-                </div>
-                <div class="mb-3">
-                    <label for="regPassword" class="form-label">Contraseña</label>
-                    <input type="password" class="form-control" id="regPassword" required>
-                </div>
-                <button type="submit" class="btn btn-success">Registrarse</button>
-            </form>
-        </div>
-    </main>
+    <div class="container">
+        <h1>Consejo del Día</h1>
+        <p id="dailyTip">Aquí va el consejo del día para ayudarte a llevar una vida más sostenible.</p>
+        <button id="completeTip" class="btn btn-success">He realizado este consejo</button>
+        <p id="confirmationMessage" class="d-none">Logro diario completado!</p>
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/daily_tip.js"></script>
 </body>
-
 </html>
