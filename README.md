@@ -2,6 +2,10 @@
 
 Bienvenido al repositorio de GrowYourThree, una aplicación web diseñada para promover la conciencia ecológica y fomentar buenos hábitos ambientales. Nuestro objetivo es ayudar a los usuarios a aprender y contribuir a la sostenibilidad a través de herramientas interactivas y contenido educativo.
 
+## Maqueta en figma
+Esperamos que en la siguiente entrega, usando ionic sea mas similar a la maqueta planteada.
+https://www.figma.com/file/rSH0buwM6lD68SxIxML6hO/Untitled?type=design&node-id=0%3A1&mode=design&t=hWwyMRXnWMuWDJJr-1
+
 ## Características / Funcionalidades
 
 - **Inicio de Sesión Usuarios:** Gestión de usuarios para personalizar y guardar el progreso de sus actividades (Por el momento solo se puede en inicio).
