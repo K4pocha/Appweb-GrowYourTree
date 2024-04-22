@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     function validateForm() {
+        
         emailInput.setCustomValidity('');
         passwordInput.setCustomValidity('');
 

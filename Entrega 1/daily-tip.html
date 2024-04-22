@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consejo del Día - GYT</title>
+    <title>Consejos diarios | GrowYourThree</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/session.js"></script>
+    <script src="js/app.js"></script>
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">GrowYourThree</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
@@ -34,7 +38,8 @@
                     </ul>
                     <div id="userUI" class="d-none">
                         <div class="dropdown">
-                            <button class="btn btn-outline-success dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button class="btn btn-outline-success dropdown-toggle" type="button"
+                                id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                 <span id="userEmail"></span>
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -44,19 +49,63 @@
                             </ul>
                         </div>
                     </div>
-                    <button id="loginButton" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#loginModal">Iniciar Sesión / Registrarse</button>
+                    <button id="loginButton" class="btn btn-outline-success" data-bs-toggle="modal"
+                        data-bs-target="#loginModal">Iniciar Sesión / Registrarse</button>
                 </div>
             </div>
         </nav>
     </header>
-    <div class="container">
-        <h1>Consejo del Día</h1>
-        <p id="dailyTip">Aquí va el consejo del día para ayudarte a llevar una vida más sostenible.</p>
-        <button id="completeTip" class="btn btn-success">He realizado este consejo</button>
-        <p id="confirmationMessage" class="d-none">Logro diario completado!</p>
+    <div class="container tip-continer">
+        <div class="image-container">
+            <img src="img/tip.jpg" alt="Sostenibilidad" class="background-image">
+            <div class="text-block">
+                <h1>Consejo del Día</h1>
+                <p id="dailyTip">Aquí va el consejo del día para ayudarte a llevar una vida más sostenible.</p>
+                <button id="completeTip" class="btn btn-success">He realizado este consejo</button>
+                <p id="confirmationMessage" class="d-none">Logro diario completado! Visita tus logros para ver tu
+                    avance. </p>
+            </div>
+        </div>
     </div>
+    <!-- Modal para Inicio de Sesión/Registro -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Iniciar Sesión / Registrarse</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm" novalidate>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email">
+                            <div id="emailError" class="form-text text-danger"></div> <!-- Error de "@"-->
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="password">
+                            <div id="passwordError" class="form-text text-danger"></div>
+                            <!-- Error de contraseña vacía-->
+                        </div>
+                        <div id="loginError" class="form-text text-danger"></div>
+                        <!-- Error de cuenta, no existe o contraseña erronea-->
+                        <br>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                            <a href="register.html" class="link-primary">¿No tienes cuenta? ¡Regístrate!</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> <!-- Bootstrap JS -->
     <script src="js/daily_tip.js"></script>
+    
 </body>
+
 </html>

@@ -11,10 +11,22 @@
 }
 
 
-body {
+html, body {
     background-color: #F0EAD6; /* Beige para el fondo general de la página */
     color: #795548; /* Marrón para el texto */
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    position: relative;
+    overflow-x: hidden; /* Esto puede ayudar a evitar scroll horizontal si hay elementos desbordados */
 }
+
+footer {
+    width: 100%; /* Asegura que el footer tenga el ancho completo del viewport */
+    box-sizing: border-box; /* Incluye el padding y el border en el cálculo del ancho */
+    margin: 0; /* Remueve márgenes externos */
+}
+
 
 .navbar {
     background-color: #D4E157; /* Verde claro para la barra de navegación */
@@ -180,4 +192,58 @@ button#createGroup:hover {
     text-align: center;
     margin-top: 20px;
     color: #4a4a4a;
+}
+
+/* Ultimos estilos agregados */
+
+/* Estilos pagina tip */ 
+.tip-container {
+    position: relative;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    max-width: 100%; /* Asegura que el contenedor tenga el ancho completo */
+    height: 100vh; /* Ajusta la altura a la de la ventana */
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra completamente el contenedor */
+}
+
+/* Estilos para el iamgen calculadora*/
+.text-block {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    max-width: 90%; /* Ajusta la anchura máxima del texto */
+}
+
+.circular-image {
+    border-radius: 50%; /* Hace que las esquinas de la imagen sean completamente redondas, formando un círculo */
+    width: 200px; /* Ajusta esto según el tamaño que necesites */
+    height: 200px; /* Asegúrate de que el ancho y el alto sean iguales para un círculo perfecto */
+    object-fit: cover; /* Esto asegura que la imagen cubra completamente el espacio sin deformarse */
+    margin-left: 175px;
+}
+
+.communities-container {
+    position: relative;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    max-width: 100%; /* Asegura que el contenedor tenga el ancho completo */
+    height: 100vh; /* Ajusta la altura a la de la ventana */
 }
