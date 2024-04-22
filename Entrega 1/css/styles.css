@@ -7,9 +7,13 @@
 
 /* styles.css */
 .navbar-brand img {
-    max-height: 200px; /* Ajustar segun se necesite */
+    max-height: 190px; /* Ajustar segun se necesite */
 }
 
+#navBarLogo {
+    max-height: 50px; /* Ajustar segun se necesite */
+
+}
 
 html, body {
     background-color: #F0EAD6; /* Beige para el fondo general de la página */
