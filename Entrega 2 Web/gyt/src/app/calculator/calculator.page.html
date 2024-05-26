@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-menu-button></ion-menu-button>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Calculadora</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<img id ="pata" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1KyoUhYYdlEPJ1sBwrdbo_sf4sbm1GnFS_A_PFqXVLnWYWbKZ5XqCCnxT67HrU2wUP1Q&usqp=CAU">
+
+<ion-content class="cal">
+  <ion-item>
+    <ion-label class="letters" position="floating">Selecciona tu medio de transporte principal:</ion-label>
+    <ion-select  [(ngModel)]="transport" name="transport" interface="popover">
+      <ion-select-option value="auto">Auto</ion-select-option>
+      <ion-select-option value="moto">Moto</ion-select-option>
+      <ion-select-option value="bicicleta">Bicicleta</ion-select-option>
+      <ion-select-option value="publico">Transporte público</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label class="letters" position="floating">Consumo eléctrico mensual en kWh:</ion-label>
+    <ion-input type="number" [(ngModel)]="electricity" name="electricity" required (keypress)="validaNumericos($event)"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label class="letters">¿Utiliza energías renovables en el hogar?</ion-label>
+    <ion-checkbox [(ngModel)]="renewable" id="renewable" name="renewable"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label class="letters" position="floating">Frecuencia semanal en el consumo de carnes:</ion-label>
+    <ion-input type="number" [(ngModel)]="meat" name="meat" required (keypress)="validaNumericos($event)"></ion-input>
+  </ion-item>
+
+  <ion-button  (click)="calculateEmissions()">Calcular Emisiones</ion-button>
+
+  <div id="result">{{ resultMessage }}</div>
+</ion-content>
+

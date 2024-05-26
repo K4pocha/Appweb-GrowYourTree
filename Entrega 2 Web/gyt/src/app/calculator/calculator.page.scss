@@ -1,0 +1,25 @@
+
+#pata{
+    width: 90%; /* Ajusta el valor según tus necesidades */
+    max-width: 500px; /* Puedes establecer un máximo si es necesario */
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+ion-select::part(text) {
+    padding-left: 300px; 
+}
+
+.cal{
+    --ion-background-color: transparent; /* Asegura que el fondo de color sea transparente */
+    background: url('/assets/miau.png') no-repeat center center fixed; /* Ajusta la ruta de la imagen */
+    background-size: cover;
+    
+
+}
+
+  
+  
+

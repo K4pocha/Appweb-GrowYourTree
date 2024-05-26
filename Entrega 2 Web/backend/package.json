@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@angular/forms": "^18.0.0",
+    "@angular/router": "^18.0.0",
+    "@ionic/angular": "^8.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  }
+}

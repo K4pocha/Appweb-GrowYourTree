@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-menu-button></ion-menu-button>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Consejos diarios</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content  class="ion-padding">
+  <div class="container tip-container">
+    <div class="image-container">
+      <div class="text-block">
+        <h1>Consejo del Día</h1>
+        <p id="dailyTip">Aquí va el consejo del día para ayudarte a llevar una vida más sostenible.</p>
+        <ion-button id="completeTip" (click)="completeTip()" color="success">He realizado este consejo</ion-button>
+        <p id="confirmationMessage" [hidden]="!tipCompleted">Logro diario completado! Visita tus logros para ver tu avance.</p>
+      </div>
+    </div>
+  </div>
+</ion-content>
+
+
