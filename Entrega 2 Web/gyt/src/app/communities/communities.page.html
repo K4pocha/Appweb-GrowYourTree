@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-menu-button></ion-menu-button>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Comunidades</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="container communities">
+    <div class="image-container">
+      <img src="https://www.larepublica.net/storage/images/2019/03/22/20190322152213.sostenibilidad.jpg?mrf-size=m" alt="Descripción de la imagen" class="background-image">
+      <h1 class="page-title">Comunidades Ambientales</h1>
+      <section class="community-section">
+        <h2>Grupos Disponibles</h2>
+        <div class="group-list">
+          <ul>
+            <li><a href="#" class="community-link" (click)="handleCommunityLinkClick('Reciclaje')">Reciclaje</a></li>
+            <li><a href="#" class="community-link" (click)="handleCommunityLinkClick('Amantes de la Naturaleza')">Amantes de la Naturaleza</a></li>
+            <li><a href="#" class="community-link" (click)="handleCommunityLinkClick('Eco-Conscientes')">Eco-Conscientes</a></li>
+            <li><a href="#" class="community-link" (click)="handleCommunityLinkClick('Jardinería Sostenible')">Jardinería Sostenible</a></li>
+          </ul>
+        </div>
+        <ion-button color="custom" (click)="handleCreateGroupClick()">Crear Nuevo Tema</ion-button>
+      </section>
+    </div>
+  </div>
+</ion-content>

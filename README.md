@@ -1,57 +1,51 @@
-# GrowYourThree
+# Grow Your Tree
 
-Bienvenido al repositorio de GrowYourThree, una aplicación web diseñada para promover la conciencia ecológica y fomentar buenos hábitos ambientales. Nuestro objetivo es ayudar a los usuarios a aprender y contribuir a la sostenibilidad a través de herramientas interactivas y contenido educativo.
-# Integrantes 
+Bienvenido a Grow Your Tree, una plataforma web diseñada para ayudarte a adoptar un estilo de vida más ecológico y sostenible. Con características como consejos diarios, una calculadora de huella de carbono, comunidades y foros para compartir ideas, y perfiles personalizados, Grow Your Tree te ayuda a cultivar hábitos más verdes y a conectarte con otros que comparten tus intereses.
 
-**Creado por Javiera Cabrera, Nidia Bugueño Y Nicolás Oñate.**
+## Características
 
-## Maqueta en figma
+### Consejos Diarios
+Recibe consejos ecológicos diarios para inspirarte y motivarte a tomar acciones sostenibles en tu vida diaria.
 
-Esperamos que en la siguiente entrega, usando ionic sea mas similar a la maqueta planteada.
+### Calculadora de CO2
+Calcula tu huella de carbono personal utilizando nuestra calculadora integrada. Aprende cómo tus acciones cotidianas impactan en el medio ambiente y descubre formas de reducir tu huella de carbono.
 
-- https://www.figma.com/file/rSH0buwM6lD68SxIxML6hO/Untitled?type=design&node-id=0%3A1&mode=design&t=hWwyMRXnWMuWDJJr-1
+### Comunidades y Foros
+Únete a diversas comunidades centradas en temas ecológicos específicos y participa en foros para discutir ideas, compartir experiencias y aprender de otros usuarios.
 
-## Test Loggin y Register
+### Perfiles Personalizados
+Crea tu propio perfil personalizado donde puedes agregar información sobre tus intereses ecológicos, realizar un seguimiento de tu progreso y conectarte con otros usuarios.
 
-Las cuentas creadas para probar el loggin son:
+### Autenticación de Usuarios
+Crea una cuenta personalizada en Grow Your Tree para acceder a todas las funciones y guardar tu progreso. Inicia sesión de forma segura para acceder a tu perfil y participar en la comunidad. Podras ver que iniciaste sesion con tu nombre de usuario en el boton de logout.
 
-- **email:** *user@example.com* | **password:** *password123*
-- **email:** *example@example.com* | **password:** *example123*
-
-En el caso de **register**, al no tener base de datos y ser distinto el manejo en cada computador, solo imprime por consola para mostrar que la lectura de los datos fue correcta.
-
-## Características / Funcionalidades
-
-- **Inicio de Sesión Usuarios:** Gestión de usuarios para personalizar y guardar el progreso de sus actividades (Por el momento solo se puede en inicio).
-- **Registro:** Registro de usuarios para tener su cuenta personal.
-- **Consejos Diarios:** Inspiración diaria con consejos prácticos para vivir de manera más sostenible.
-- **Calculadora de CO2:** Herramienta interactiva para estimar la huella de carbono personal.
-- **Foros y Comunidades:** Espacio para discutir y compartir ideas sobre sostenibilidad.
-- **Logros:** Sistema de recompensas para motivar a los usuarios a participar activamente.
-
-## Tecnologías Utilizadas
-
-- **HTML5**
-- **CSS3**
-- **JavaScript y librerias asociadas** 
-- **Bootstrap 5:** Para un diseño responsivo y moderno.
-
+### Proximamente
+Integracion de todos los modulos para que los cambios realizados se mantengan y sean visibles para el usuario. Actualmente solo el modulo de iniciar sesion o registrarse funcionan al 100%.
 
 ## Instalación
 
-Para poner en marcha el proyecto localmente, sigue estos pasos:
+Para ejecutar el proyecto localmente, sigue estos pasos:
 
-1. Clona el repositorio:
-   ```bash
-   git clone https://github.com/your-username/GrowYourThree.git
-2. Abre el archivo index.html en tu navegador para acceder a la aplicación.
+1. Clona este repositorio o descarga el .zip.
 
-
-## Contribuir
-
-Si estás interesad@ en contribuir al proyecto, solo se feliz y hazlo :D
+2. Navega hasta el directorio del proyecto:
 
 
+3. Instala las dependencias del proyecto en caso de ser necesario.
 
+4. Inicia el backend:
 
+Estando en la carpeta raiz:
+cd backend
+node server.js
+
+5. Inicia el frontend
+
+Estando en la carpeta raiz:
+cd gyt
+ionic serve
+
+## Equipo
+
+Grow Your Tree fue desarrollado por [Tu Nombre](https://github.com/K4pocha) y [Otros Colaboradores](https://github.com/nidiabugueno/)
 
