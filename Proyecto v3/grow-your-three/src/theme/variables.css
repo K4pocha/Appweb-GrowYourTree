@@ -1,0 +1,64 @@
+:root {
+    /* Fondo y texto principal */
+    --ion-background-color: #eafaf1; /* Fondo verde claro */
+    --ion-text-color: #1e4620; /* Texto verde oscuro */
+  
+    /* Colores primarios */
+    --ion-color-primary: #4caf50; /* Verde */
+    --ion-color-primary-rgb: 76, 175, 80;
+    --ion-color-primary-contrast: #ffffff;
+    --ion-color-primary-contrast-rgb: 255, 255, 255;
+    --ion-color-primary-shade: #43a047;
+    --ion-color-primary-tint: #66bb6a;
+  
+    /* Colores secundarios */
+    --ion-color-secondary: #81c784; /* Verde medio */
+    --ion-color-secondary-rgb: 129, 199, 132;
+    --ion-color-secondary-contrast: #ffffff;
+    --ion-color-secondary-contrast-rgb: 255, 255, 255;
+    --ion-color-secondary-shade: #66bb6a;
+    --ion-color-secondary-tint: #a5d6a7;
+  
+    /* Colores terciarios */
+    --ion-color-tertiary: #a5d6a7; /* Verde claro */
+    --ion-color-tertiary-rgb: 165, 214, 167;
+    --ion-color-tertiary-contrast: #ffffff;
+    --ion-color-tertiary-contrast-rgb: 255, 255, 255;
+    --ion-color-tertiary-shade: #81c784;
+    --ion-color-tertiary-tint: #c8e6c9;
+  
+    /* Otros colores */
+    --ion-color-success: #2e7d32; /* Verde oscuro */
+    --ion-color-warning: #fbc02d; /* Amarillo */
+    --ion-color-danger: #c62828; /* Rojo */
+    --ion-color-dark: #1b5e20; /* Verde muy oscuro */
+    --ion-color-medium: #66bb6a; /* Verde medio */
+    --ion-color-light: #c8e6c9; /* Verde claro */
+  
+    /* Barra superior y de menú */
+    --ion-toolbar-background: #4caf50; /* Fondo verde */
+    --ion-toolbar-color: #ffffff; /* Texto blanco */
+  
+    /* Fondo del modal */
+    --ion-modal-background: #eafaf1; /* Fondo verde claro */
+  }
+  
+  body {
+    background-color: var(--ion-background-color);
+    color: var(--ion-text-color);
+  }
+  
+  ion-toolbar {
+    --background: var(--ion-toolbar-background);
+    --color: var(--ion-toolbar-color);
+  }
+  
+  ion-tab-bar {
+    --background: var(--ion-toolbar-background);
+    --color: var(--ion-toolbar-color);
+  }
+  
+  ion-modal {
+    --background: var(--ion-modal-background);
+  }
+  
