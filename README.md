@@ -47,5 +47,5 @@ ionic serve
 
 ## Equipo
 
-Grow Your Tree fue desarrollado por [Tu Nombre](https://github.com/K4pocha) y [Otros Colaboradores](https://github.com/nidiabugueno/)
+Grow Your Tree fue desarrollado por [(https://github.com/K4pocha)] y [(https://github.com/nidiabugueno/)]
 
