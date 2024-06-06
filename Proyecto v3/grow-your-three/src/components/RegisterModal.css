@@ -1,0 +1,16 @@
+.error-message {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .warning-message {
+    color: yellow;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  input.error {
+    border-color: red;
+  }
+  

@@ -1,7 +1,0 @@
-{
-  "name": "gyt",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
-}
