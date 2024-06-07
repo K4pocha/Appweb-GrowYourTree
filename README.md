@@ -101,7 +101,7 @@ Las contribuciones son bienvenidas. Si deseas contribuir, por favor sigue estos 
 
 =======
 
-Grow Your Tree fue desarrollado por [(https://github.com/K4pocha)] y [(https://github.com/nidiabugueno/)]
+Grow Your Tree fue desarrollado por [https://github.com/K4pocha] - [https://github.com/nidiabugueno/] - [https://github.com/xksis]
 
 =======
 
