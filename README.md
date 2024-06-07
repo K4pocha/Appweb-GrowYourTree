@@ -99,3 +99,8 @@ Las contribuciones son bienvenidas. Si deseas contribuir, por favor sigue estos 
 5. Abre un Pull Request.
 
 
+=======
+Grow Your Tree fue desarrollado por [(https://github.com/K4pocha)] y [(https://github.com/nidiabugueno/)]
+
+=======
+
