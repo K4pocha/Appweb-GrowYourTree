@@ -1,51 +1,106 @@
-# Grow Your Tree
+# Grow Your Three
 
-Bienvenido a Grow Your Tree, una plataforma web diseñada para ayudarte a adoptar un estilo de vida más ecológico y sostenible. Con características como consejos diarios, una calculadora de huella de carbono, comunidades y foros para compartir ideas, y perfiles personalizados, Grow Your Tree te ayuda a cultivar hábitos más verdes y a conectarte con otros que comparten tus intereses.
+Grow Your Three es una aplicación web desarrollada con Ionic y React que tiene como objetivo fomentar el desarrollo sostenible según la agenda 2030 de la ONU. La aplicación permite a los usuarios registrarse, iniciar sesión, calcular su huella de CO2, acceder a logros, ver su perfil y participar en foros.
 
 ## Características
 
-### Consejos Diarios
-Recibe consejos ecológicos diarios para inspirarte y motivarte a tomar acciones sostenibles en tu vida diaria.
+- Registro e inicio de sesión de usuarios.
+- Cálculo de la huella de CO2.
+- Acceso a logros.
+- Visualización y edición del perfil del usuario.
+- Participación en foros con publicaciones y comentarios.
+- Gestión de sesión de usuario con autenticación básica.
 
-### Calculadora de CO2
-Calcula tu huella de carbono personal utilizando nuestra calculadora integrada. Aprende cómo tus acciones cotidianas impactan en el medio ambiente y descubre formas de reducir tu huella de carbono.
+## Requisitos Previos
 
-### Comunidades y Foros
-Únete a diversas comunidades centradas en temas ecológicos específicos y participa en foros para discutir ideas, compartir experiencias y aprender de otros usuarios.
-
-### Perfiles Personalizados
-Crea tu propio perfil personalizado donde puedes agregar información sobre tus intereses ecológicos, realizar un seguimiento de tu progreso y conectarte con otros usuarios.
-
-### Autenticación de Usuarios
-Crea una cuenta personalizada en Grow Your Tree para acceder a todas las funciones y guardar tu progreso. Inicia sesión de forma segura para acceder a tu perfil y participar en la comunidad. Podras ver que iniciaste sesion con tu nombre de usuario en el boton de logout.
-
-### Proximamente
-Integracion de todos los modulos para que los cambios realizados se mantengan y sean visibles para el usuario. Actualmente solo el modulo de iniciar sesion o registrarse funcionan al 100%.
+- Node.js (versión 12 o superior)
+- npm (versión 6 o superior)
+- Ionic CLI
 
 ## Instalación
 
-Para ejecutar el proyecto localmente, sigue estos pasos:
+Sigue estos pasos para ejecutar el proyecto en tu entorno local:
 
-1. Clona este repositorio o descarga el .zip.
+1. Clona este repositorio:
 
-2. Navega hasta el directorio del proyecto:
+    ```sh
+    git clone https://github.com/tu-usuario/grow-your-three.git
+    cd grow-your-three
+    ```
+
+2. Instala las dependencias del proyecto:
+
+    ```sh
+    npm install
+    ```
+
+3. Instala las dependencias de Ionic:
+
+    ```sh
+    npm install -g @ionic/cli
+    ```
 
 
-3. Instala las dependencias del proyecto en caso de ser necesario.
+5. Inicia el servidor backend:
 
-4. Inicia el backend:
+    ```sh
+    node server.js
+    ```
 
-Estando en la carpeta raiz:
-cd backend
-node server.js
+6. Inicia la aplicación frontend:
 
-5. Inicia el frontend
+    ```sh
+    ionic serve
+    ```
 
-Estando en la carpeta raiz:
-cd gyt
-ionic serve
+## Uso
 
-## Equipo
+Una vez que la aplicación y el backend estén en funcionamiento, abre tu navegador web y visita `http://localhost:8100` para ver la aplicación.
 
+### Funcionalidades Principales
+
+- **Registro:** Los usuarios pueden registrarse proporcionando un nombre, apodo, correo electrónico y contraseña.
+- **Inicio de Sesión:** Los usuarios pueden iniciar sesión con su correo electrónico o apodo y contraseña.
+- **Cálculo de CO2:** Los usuarios pueden calcular su huella de CO2.
+- **Logros:** Los usuarios pueden ver sus logros.
+- **Perfil:** Los usuarios pueden ver y editar su perfil.
+- **Foros:** Los usuarios pueden crear publicaciones y comentarios en los foros.
+
+## Estructura del Proyecto
+
+- **src/components:** Contiene los componentes de React utilizados en la aplicación.
+- **src/pages:** Contiene las páginas principales de la aplicación.
+- **src/contexts:** Contiene los contextos de React para manejar el estado global de la aplicación.
+- **server.js:** Archivo del servidor backend que maneja las rutas y la lógica de negocio.
+- **data/users.json:** Archivo JSON que actúa como base de datos para almacenar la información de los usuarios.
+- **data/posts.json:** Archivo JSON que actúa como base de datos para almacenar las publicaciones.
+
+## Notas
+
+- Este proyecto utiliza archivos JSON para almacenar datos. Se espera próximamente migrar a MongoDB para un uso en producción.
+- La autenticación y autorización básica están implementadas. Se implementara próximamente la seguridad usando JWT y bcrypt para el manejo de sesiones y contraseñas.
+
+## Próximos Pasos (Actualizaciones futuras pendientes)
+
+- Migrar de archivos JSON a una base de datos como MongoDB.
+- Implementar autenticación y autorización con JWT.
+- Añadir encriptación de contraseñas utilizando bcrypt.
+- Mejorar la seguridad implementando CAPTCHA en formularios de registro e inicio de sesión.
+- Implementar gestión de roles (usuario y administrador).
+
+## Contribuciones
+
+Las contribuciones son bienvenidas. Si deseas contribuir, por favor sigue estos pasos:
+
+1. Haz un fork del repositorio.
+2. Crea una nueva rama (`git checkout -b feature/nueva-funcionalidad`).
+3. Realiza tus cambios y haz commit (`git commit -m 'Añadir nueva funcionalidad'`).
+4. Sube los cambios a tu fork (`git push origin feature/nueva-funcionalidad`).
+5. Abre un Pull Request.
+
+
+=======
 Grow Your Tree fue desarrollado por [(https://github.com/K4pocha)] y [(https://github.com/nidiabugueno/)]
+
+=======
 
