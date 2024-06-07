@@ -1,0 +1,47 @@
+[
+  {
+    "content": "Hola!",
+    "author": "Kapo",
+    "id": "1717723417070",
+    "likes": 8,
+    "dislikes": 8,
+    "comments": [
+      {
+        "content": "Hola Nicolas!",
+        "author": "Kapo",
+        "id": "1717723427880"
+      },
+      {
+        "content": "Hola Nicolas!",
+        "author": "Kapo",
+        "id": "1717723428583"
+      },
+      {
+        "content": "Hola Nicolas!",
+        "author": "Kapo",
+        "id": "1717723431894"
+      },
+      {
+        "content": "Hola nidiaaa!",
+        "author": "Sicosi",
+        "id": "1717723492526"
+      }
+    ]
+  },
+  {
+    "content": "LALALALAL",
+    "author": "Kapo",
+    "id": "1717723818982",
+    "likes": 9,
+    "dislikes": 0,
+    "comments": []
+  },
+  {
+    "content": "Hola mundo!",
+    "author": "Kapo",
+    "id": "1717723993697",
+    "likes": 0,
+    "dislikes": 0,
+    "comments": []
+  }
+]
