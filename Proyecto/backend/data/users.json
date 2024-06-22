@@ -5,5 +5,12 @@
     "nickname": "Kapocha",
     "email": "kapo@gmail.com",
     "password": "Nico"
+  },
+  {
+    "id": "88bf06d2-7ec6-4fb9-9c6e-9c7127cc9fa6",
+    "name": "Javi",
+    "nickname": "Bañate",
+    "email": "JaviBañate@gmail.com",
+    "password": "javi123"
   }
 ]

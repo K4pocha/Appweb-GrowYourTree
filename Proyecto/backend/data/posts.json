@@ -3,8 +3,8 @@
     "content": "Hola!",
     "author": "Kapo",
     "id": "1717723417070",
-    "likes": 8,
-    "dislikes": 8,
+    "likes": 9,
+    "dislikes": 9,
     "comments": [
       {
         "content": "Hola Nicolas!",
@@ -26,15 +26,35 @@
         "author": "Sicosi",
         "id": "1717723492526"
       }
+    ],
+    "dislikedBy": [
+      "88bf06d2-7ec6-4fb9-9c6e-9c7127cc9fa6"
+    ],
+    "likedBy": [
+      "88bf06d2-7ec6-4fb9-9c6e-9c7127cc9fa6"
     ]
   },
   {
     "content": "LALALALAL",
     "author": "Kapo",
     "id": "1717723818982",
-    "likes": 9,
-    "dislikes": 0,
-    "comments": []
+    "likes": 11,
+    "dislikes": 2,
+    "comments": [
+      {
+        "content": "LALALALALA LELELEL",
+        "author": "Bañate",
+        "id": "1719077341822"
+      }
+    ],
+    "dislikedBy": [
+      "5398712e-b2ed-4deb-ab7d-a73bfb7e31ff",
+      "88bf06d2-7ec6-4fb9-9c6e-9c7127cc9fa6"
+    ],
+    "likedBy": [
+      "5398712e-b2ed-4deb-ab7d-a73bfb7e31ff",
+      "88bf06d2-7ec6-4fb9-9c6e-9c7127cc9fa6"
+    ]
   },
   {
     "content": "Hola mundo!",
@@ -43,5 +63,16 @@
     "likes": 0,
     "dislikes": 0,
     "comments": []
+  },
+  {
+    "content": "Hola que tal",
+    "author": "Bañate",
+    "id": "1719077355277",
+    "likes": 1,
+    "dislikes": 0,
+    "comments": [],
+    "likedBy": [
+      "88bf06d2-7ec6-4fb9-9c6e-9c7127cc9fa6"
+    ]
   }
 ]
