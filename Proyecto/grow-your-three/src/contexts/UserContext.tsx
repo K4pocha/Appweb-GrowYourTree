@@ -6,6 +6,7 @@ interface User {
   nickname: string;
   email: string;
   role: 'user' | 'admin';
+  
 }
 
 interface UserContextProps {

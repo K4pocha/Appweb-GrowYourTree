@@ -1,84 +1,100 @@
 # Grow Your Three
 
-Grow Your Three es una aplicación web desarrollada con Ionic y React que tiene como objetivo fomentar el desarrollo sostenible según la agenda 2030 de la ONU. La aplicación permite a los usuarios registrarse, iniciar sesión, calcular su huella de CO2, acceder a logros, ver su perfil y participar en foros.
+Grow Your Three es una aplicación web desarrollada con Ionic y React, con un backend basado en Node.js y MongoDB. La aplicación está diseñada para promover el desarrollo sostenible y ayudar a los usuarios a reducir su huella de carbono mediante la realización de diversas actividades y comportamientos ecológicos.
 
-## Características
+## Funcionalidades
 
-- Registro e inicio de sesión de usuarios.
-- Cálculo de la huella de CO2.
-- Acceso a logros.
-- Visualización y edición del perfil del usuario.
-- Participación en foros con publicaciones y comentarios.
-- Gestión de sesión de usuario con autenticación básica.
+- **Registro e Inicio de Sesión**: Los usuarios pueden registrarse y iniciar sesión. La autenticación se maneja con JSON Web Tokens (JWT).
+- **Roles de Usuario**: La aplicación tiene roles de usuario y administrador. Los administradores pueden asignar logros a los usuarios y cambiar el rol de los usuarios.
+- **Calculadora de CO2**: Los usuarios pueden calcular su huella de carbono basada en sus actividades diarias.
+- **Logros**: Los usuarios pueden desbloquear logros basados en actividades sostenibles. Los logros están categorizados y pueden tener diferentes niveles (Bronce, Plata, Oro).
+- **Foros**: Los usuarios pueden crear, comentar y dar like o dislike a las publicaciones. Los administradores pueden eliminar publicaciones.
+- **Recomendaciones Diarias**: Los usuarios pueden ver recomendaciones diarias para reducir su huella de carbono.
+- **Gestión de Contraseñas**: Los usuarios pueden cambiar su contraseña desde la página de perfil.
 
-## Requisitos Previos
+## Tecnologías Utilizadas
 
-- Node.js (versión 12 o superior)
-- npm (versión 6 o superior)
-- Ionic CLI
+- **Frontend**: Ionic, React
+- **Backend**: Node.js, Express.js, MongoDB
+- **Autenticación**: JSON Web Tokens (JWT)
+
+## Requisitos
+
+- Node.js
+- MongoDB
 
 ## Instalación
 
-Sigue estos pasos para ejecutar el proyecto en tu entorno local:
+### 1. Clonar el Repositorio
 
-1. Clona este repositorio:
+git clone https://github.com/K4pocha/Proyecto-Ing.Web-2024.git
+cd grow-your-three
 
-    ```sh
-    git clone https://github.com/tu-usuario/grow-your-three.git
-    cd grow-your-three
-    ```
+### 2. Configurar el Backend
 
-2. Instala las dependencias del proyecto:
+#### Instalar Dependencias
 
-    ```sh
-    npm install
-    ```
+cd backend
+npm install express mongoose jsonwebtoken bcryptjs cors dotenv
 
-3. Instala las dependencias de Ionic:
+(Pueden faltar dependencias que haya olvidado, verificar al compilar)
 
-    ```sh
-    npm install -g @ionic/cli
-    ```
+#### Configurar Variables de Entorno
+
+Crear un archivo `.env` en la carpeta `backend` con el siguiente contenido:
+
+MONGODB_URI=mongodb://localhost:27017/grow-your-tree
+JWT_SECRET=tu_secreto_jwt
 
 
-5. Inicia el servidor backend:
+#### Iniciar el Servidor
 
-    ```sh
-    node server.js
-    ```
+node server.js
 
-6. Inicia la aplicación frontend:
 
-    ```sh
-    ionic serve
-    ```
+### 3. Configurar el Frontend
 
-## Uso
+#### Instalar Dependencias
 
-Una vez que la aplicación y el backend estén en funcionamiento, abre tu navegador web y visita `http://localhost:8100` para ver la aplicación.
+cd ../frontend
+npm install @ionic/react react-router-dom axios react-hook-form
 
-### Funcionalidades Principales
+(Pueden faltar dependencias que haya olvidado, verificar al compilar)
 
-- **Registro:** Los usuarios pueden registrarse proporcionando un nombre, apodo, correo electrónico y contraseña.
-- **Inicio de Sesión:** Los usuarios pueden iniciar sesión con su correo electrónico o apodo y contraseña.
-- **Cálculo de CO2:** Los usuarios pueden calcular su huella de CO2.
-- **Logros:** Los usuarios pueden ver sus logros.
-- **Perfil:** Los usuarios pueden ver y editar su perfil.
-- **Foros:** Los usuarios pueden crear publicaciones y comentarios en los foros.
+
+#### Iniciar la Aplicación
+
+ionic serve
+
 
 ## Estructura del Proyecto
 
-- **src/components:** Contiene los componentes de React utilizados en la aplicación.
-- **src/pages:** Contiene las páginas principales de la aplicación.
-- **src/contexts:** Contiene los contextos de React para manejar el estado global de la aplicación.
-- **server.js:** Archivo del servidor backend que maneja las rutas y la lógica de negocio.
-- **data/users.json:** Archivo JSON que actúa como base de datos para almacenar la información de los usuarios.
-- **data/posts.json:** Archivo JSON que actúa como base de datos para almacenar las publicaciones.
 
-## Notas
 
-- Este proyecto utiliza archivos JSON para almacenar datos. Se espera próximamente migrar a MongoDB para un uso en producción.
-- La autenticación y autorización básica están implementadas. Se implementara próximamente la seguridad usando JWT y bcrypt para el manejo de sesiones y contraseñas.
+
+## Uso
+
+### Roles de Usuario
+
+- **Usuarios**: Pueden calcular su huella de carbono, ver y desbloquear logros, participar en foros y ver recomendaciones diarias.
+- **Administradores**: Pueden asignar logros a los usuarios, cambiar roles de usuario y eliminar publicaciones en los foros.
+
+### Recomendaciones Diarias
+
+Las recomendaciones diarias se pueden actualizar desde el backend. La ruta para actualizar las recomendaciones es `/recommendations` y solo puede ser accedida por los administradores.
+
+### Gestión de Logros
+
+Los logros se pueden asignar y quitar a los usuarios desde la página de gestión de usuarios (`/manageUsers`). Los logros tienen diferentes categorías y niveles, y se muestran tanto en la página de logros como en el perfil del usuario.
+
+## Seguridad
+
+La aplicación implementa varias medidas de seguridad:
+
+- **Autenticación JWT**: Se utiliza JSON Web Tokens para la autenticación y autorización de usuarios.
+- **Encriptación de Contraseñas**: Las contraseñas se encriptan antes de almacenarlas en la base de datos.
+- **Roles y Permisos**: Los roles de usuario y administrador aseguran que solo los usuarios autorizados puedan realizar ciertas acciones.
+- **Variables de Entorno**: Se utilizan variables de entorno para proteger datos sensibles como la URI de MongoDB y el secreto JWT.
 
 ## Próximos Pasos (Actualizaciones futuras pendientes)
 

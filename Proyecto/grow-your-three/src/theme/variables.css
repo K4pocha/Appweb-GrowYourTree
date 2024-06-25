@@ -2,6 +2,7 @@
     /* Fondo y texto principal */
     --ion-background-color: #eafaf1; /* Fondo verde claro */
     --ion-text-color: #1e4620; /* Texto verde oscuro */
+    --ion-font-family: 'Montserrat', sans-serif;
   
     /* Colores primarios */
     --ion-color-primary: #4caf50; /* Verde */
@@ -82,3 +83,4 @@
       max-height: calc(100vh - 200px); /* Ajustar según sea necesario */
   }
 }
+

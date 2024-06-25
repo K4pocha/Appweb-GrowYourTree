@@ -6,13 +6,18 @@ import {
     IonIcon, IonLabel, IonToast, IonMenuButton, IonContent, IonButton 
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { homeOutline, calculatorOutline } from 'ionicons/icons';
+import { homeOutline, calculatorOutline, iceCream, leaf } from 'ionicons/icons';
 import Home from './pages/Home';
 import CO2Calculator from './pages/CO2Calculator';
 import Achievements from './pages/Achievements';
 import Profile from './pages/Profile';
 import Posts from './pages/Posts';
-import ManageUsers from './pages/ManageUsers'; // Importa la nueva página
+import Recommendations from './pages/Recommendations';
+import SectionPosts from './components/SectionPosts';
+import PostComments from './components/PostComments';
+
+
+import ManageUsers from './pages/ManageUsers';
 import LoginModal from './components/LoginModal';
 import RegisterModal from './components/RegisterModal';
 import PrivateRoute from './components/PrivateRoute';
@@ -115,24 +120,31 @@ const AppContent: React.FC = () => {
             </IonHeader>
             <IonContent id="main-content">
                 <IonRouterOutlet>
-                    <Route path="/home" component={Home} exact />
-                    <Route path="/calculator" component={CO2Calculator} exact />
+                    <Route path="/home" component={Home} exact={true} />
+                    <Route path="/calculator" component={CO2Calculator} exact={true} />
+                    <Route path="/recommendations" component={Recommendations} exact={true} />
                     <PrivateRoute path="/achievements" component={Achievements} exact onShowToast={handleShowToast} />
                     <PrivateRoute path="/profile" component={Profile} exact onShowToast={handleShowToast} />
                     <PrivateRoute path="/posts" component={Posts} exact onShowToast={handleShowToast} />
+                    <PrivateRoute path="/posts/:section" component={SectionPosts} exact onShowToast={handleShowToast} />
+                    <PrivateRoute path="/posts/:section/:id" component={PostComments} exact onShowToast={handleShowToast} />
                     <PrivateRoute path="/manage-users" component={ManageUsers} exact onShowToast={handleShowToast} />
                     <Redirect exact from="/" to="/home" />
                 </IonRouterOutlet>
             </IonContent>
             <IonTabBar slot="bottom">
-                <IonTabButton tab="home" href="/home">
+                <IonTabButton tab="Inicio" href="/home">
                     <IonIcon icon={homeOutline} />
                     <IonLabel>Inicio</IonLabel>
                 </IonTabButton>
-                <IonTabButton tab="calculator" href="/calculator">
+                <IonTabButton tab="Calculadora" href="/calculator">
                     <IonIcon icon={calculatorOutline} />
                     <IonLabel>Calculadora</IonLabel>
                 </IonTabButton>
+                <IonTabButton tab="recommendations" href="/recommendations">
+            <IonIcon icon={leaf} />
+            <IonLabel>Recomendaciones</IonLabel>
+          </IonTabButton>
             </IonTabBar>
             <IonToast
                 isOpen={showToast}
