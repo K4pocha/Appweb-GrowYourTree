@@ -62,3 +62,23 @@
     --background: var(--ion-modal-background);
   }
   
+@media (max-width: 600px) {
+  .ion-title {
+      font-size: 1.2em;
+  }
+  .ion-button {
+      font-size: 1em;
+  }
+  .ion-toolbar {
+      padding: 0 10px;
+  }
+  .ion-buttons {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+  }
+  .achievements-container {
+      overflow-y: auto;
+      max-height: calc(100vh - 200px); /* Ajustar según sea necesario */
+  }
+}

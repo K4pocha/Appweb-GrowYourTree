@@ -1,16 +1,43 @@
 [
   {
-    "id": "5398712e-b2ed-4deb-ab7d-a73bfb7e31ff",
-    "name": "Nico",
+    "id": "348a8bfa-d013-4bd4-91a8-18ab705cf53c",
+    "name": "Nicolas",
     "nickname": "Kapocha",
-    "email": "kapo@gmail.com",
-    "password": "Nico"
+    "email": "nico@gmail.com",
+    "password": "$2a$10$.ltAMl.FARJ4SZjQascC2eBIyWqXA35V2SwpVnJTRQ0mRtxblxZ9G",
+    "role": "admin",
+    "achievements": [
+      "bike_to_work_day",
+      "bike_to_work_month",
+      "bike_to_work_six_months",
+      "public_transport_day",
+      "public_transport_month",
+      "public_transport_six_months",
+      "recycle_plastic_day",
+      "recycle_plastic_month",
+      "recycle_plastic_six_months",
+      "buy_local_day",
+      "buy_local_month",
+      "buy_local_six_months",
+      "reduce_energy_day",
+      "reduce_energy_month",
+      "reduce_energy_six_months",
+      "use_led_day",
+      "use_led_month",
+      "use_led_six_months"
+    ],
+    "points": 10
   },
   {
-    "id": "88bf06d2-7ec6-4fb9-9c6e-9c7127cc9fa6",
-    "name": "Javi",
-    "nickname": "Bañate",
-    "email": "JaviBañate@gmail.com",
-    "password": "javi123"
+    "id": "3663991d-9135-4716-bba3-c2e39767f1cd",
+    "name": "Javiera",
+    "nickname": "Sicosi",
+    "email": "Javi@gmail.com",
+    "password": "$2a$10$F9gMjIhuf9su.qVDGssMwuw4orzCU0bi8ER8jZA2UOLjQ1GRJvP6K",
+    "role": "user",
+    "achievements": [
+      "bike_to_work_month"
+    ],
+    "points": 0
   }
 ]

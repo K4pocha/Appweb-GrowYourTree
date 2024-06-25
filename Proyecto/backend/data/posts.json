@@ -1,78 +1,46 @@
 [
   {
-    "content": "Hola!",
-    "author": "Kapo",
-    "id": "1717723417070",
-    "likes": 9,
-    "dislikes": 9,
-    "comments": [
-      {
-        "content": "Hola Nicolas!",
-        "author": "Kapo",
-        "id": "1717723427880"
-      },
-      {
-        "content": "Hola Nicolas!",
-        "author": "Kapo",
-        "id": "1717723428583"
-      },
-      {
-        "content": "Hola Nicolas!",
-        "author": "Kapo",
-        "id": "1717723431894"
-      },
-      {
-        "content": "Hola nidiaaa!",
-        "author": "Sicosi",
-        "id": "1717723492526"
-      }
-    ],
-    "dislikedBy": [
-      "88bf06d2-7ec6-4fb9-9c6e-9c7127cc9fa6"
-    ],
-    "likedBy": [
-      "88bf06d2-7ec6-4fb9-9c6e-9c7127cc9fa6"
-    ]
-  },
-  {
-    "content": "LALALALAL",
-    "author": "Kapo",
-    "id": "1717723818982",
-    "likes": 11,
-    "dislikes": 2,
-    "comments": [
-      {
-        "content": "LALALALALA LELELEL",
-        "author": "Bañate",
-        "id": "1719077341822"
-      }
-    ],
-    "dislikedBy": [
-      "5398712e-b2ed-4deb-ab7d-a73bfb7e31ff",
-      "88bf06d2-7ec6-4fb9-9c6e-9c7127cc9fa6"
-    ],
-    "likedBy": [
-      "5398712e-b2ed-4deb-ab7d-a73bfb7e31ff",
-      "88bf06d2-7ec6-4fb9-9c6e-9c7127cc9fa6"
-    ]
-  },
-  {
-    "content": "Hola mundo!",
-    "author": "Kapo",
-    "id": "1717723993697",
+    "id": "1",
+    "userId": "2",
+    "title": "Primera Publicación",
+    "content": "Este es el contenido de la primera publicación.",
+    "category": "general",
     "likes": 0,
     "dislikes": 0,
-    "comments": []
+    "comments": [],
+    "deletedBy": "348a8bfa-d013-4bd4-91a8-18ab705cf53c"
   },
   {
-    "content": "Hola que tal",
-    "author": "Bañate",
-    "id": "1719077355277",
-    "likes": 1,
+    "id": "2",
+    "userId": "3",
+    "title": "Segunda Publicación",
+    "content": "Este es el contenido de la segunda publicación.",
+    "category": "preguntas",
+    "likes": 0,
     "dislikes": 0,
     "comments": [],
-    "likedBy": [
-      "88bf06d2-7ec6-4fb9-9c6e-9c7127cc9fa6"
-    ]
+    "deletedBy": "348a8bfa-d013-4bd4-91a8-18ab705cf53c"
+  },
+  {
+    "title": " Sofia hola",
+    "content": "Hola",
+    "category": "preguntas",
+    "id": "1719271066510",
+    "userId": "348a8bfa-d013-4bd4-91a8-18ab705cf53c",
+    "likes": 0,
+    "dislikes": 0,
+    "comments": [],
+    "deletedBy": "348a8bfa-d013-4bd4-91a8-18ab705cf53c"
+  },
+  {
+    "title": "",
+    "content": "",
+    "category": "",
+    "id": "1719272358072",
+    "userId": "348a8bfa-d013-4bd4-91a8-18ab705cf53c",
+    "likes": 0,
+    "dislikes": 0,
+    "comments": [],
+    "deletedBy": null
   }
 ]

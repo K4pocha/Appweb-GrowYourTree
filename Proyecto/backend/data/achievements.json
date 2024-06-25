@@ -1,0 +1,143 @@
+[
+    {
+        "category": "Movilidad Sostenible",
+        "achievements": [
+            {
+                "level": "Bronce",
+                "description": "Usa bicicleta para transportarte al trabajo durante un día",
+                "criteria": "bike_to_work_day",
+                "points": 10,
+                "image": "bike_bronze.png"
+            },
+            {
+                "level": "Plata",
+                "description": "Usa bicicleta para transportarte al trabajo durante un mes",
+                "criteria": "bike_to_work_month",
+                "points": 20,
+                "image": "bike_silver.png"
+            },
+            {
+                "level": "Oro",
+                "description": "Usa bicicleta para transportarte al trabajo durante seis meses",
+                "criteria": "bike_to_work_six_months",
+                "points": 30,
+                "image": "bike_gold.png"
+            },
+            {
+                "level": "Bronce",
+                "description": "Usa transporte público para transportarte al trabajo durante un día",
+                "criteria": "public_transport_day",
+                "points": 10,
+                "image": "bus_bronze.png"
+            },
+            {
+                "level": "Plata",
+                "description": "Usa transporte público para transportarte al trabajo durante un mes",
+                "criteria": "public_transport_month",
+                "points": 20,
+                "image": "bus_silver.png"
+            },
+            {
+                "level": "Oro",
+                "description": "Usa transporte público para transportarte al trabajo durante seis meses",
+                "criteria": "public_transport_six_months",
+                "points": 30,
+                "image": "bus_gold.png"
+            }
+        ]
+    },
+    {
+        "category": "Consumo Responsable",
+        "achievements": [
+            {
+                "level": "Bronce",
+                "description": "Recicla al menos una bolsa de plásticos al día",
+                "criteria": "recycle_plastic_day",
+                "points": 10,
+                "image": "recycle_bronze.png"
+            },
+            {
+                "level": "Plata",
+                "description": "Recicla al menos una bolsa de plásticos durante un mes",
+                "criteria": "recycle_plastic_month",
+                "points": 20,
+                "image": "recycle_silver.png"
+            },
+            {
+                "level": "Oro",
+                "description": "Recicla al menos una bolsa de plásticos durante seis meses",
+                "criteria": "recycle_plastic_six_months",
+                "points": 30,
+                "image": "recycle_gold.png"
+            },
+            {
+                "level": "Bronce",
+                "description": "Compra productos locales al menos una vez al día",
+                "criteria": "buy_local_day",
+                "points": 10,
+                "image": "local_bronze.png"
+            },
+            {
+                "level": "Plata",
+                "description": "Compra productos locales al menos una vez al mes",
+                "criteria": "buy_local_month",
+                "points": 20,
+                "image": "local_silver.png"
+            },
+            {
+                "level": "Oro",
+                "description": "Compra productos locales al menos una vez al mes durante seis meses",
+                "criteria": "buy_local_six_months",
+                "points": 30,
+                "image": "local_gold.png"
+            }
+        ]
+    },
+    {
+        "category": "Ahorro de Energía",
+        "achievements": [
+            {
+                "level": "Bronce",
+                "description": "Reduce el consumo de energía en tu hogar un 10% durante un día",
+                "criteria": "reduce_energy_day",
+                "points": 10,
+                "image": "energy_bronze.png"
+            },
+            {
+                "level": "Plata",
+                "description": "Reduce el consumo de energía en tu hogar un 10% durante un mes",
+                "criteria": "reduce_energy_month",
+                "points": 20,
+                "image": "energy_silver.png"
+            },
+            {
+                "level": "Oro",
+                "description": "Reduce el consumo de energía en tu hogar un 10% durante seis meses",
+                "criteria": "reduce_energy_six_months",
+                "points": 30,
+                "image": "energy_gold.png"
+            },
+            {
+                "level": "Bronce",
+                "description": "Instala y usa bombillas LED en tu hogar y úsalas durante un día",
+                "criteria": "use_led_day",
+                "points": 10,
+                "image": "led_bronze.png"
+            },
+            {
+                "level": "Plata",
+                "description": "Usa bombillas LED en tu hogar y úsalas durante un mes",
+                "criteria": "use_led_month",
+                "points": 20,
+                "image": "led_silver.png"
+            },
+            {
+                "level": "Oro",
+                "description": "Usa bombillas LED en tu hogar y úsalas durante seis meses",
+                "criteria": "use_led_six_months",
+                "points": 30,
+                "image": "led_gold.png"
+            }
+        ]
+    }
+]

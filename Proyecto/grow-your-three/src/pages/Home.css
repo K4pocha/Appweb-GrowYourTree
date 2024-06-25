@@ -1,14 +1,34 @@
-.container {
-    padding: 16px;
+.home-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.intro-section {
+  margin-bottom: 20px;
+}
+
+.features-section {
+  margin-bottom: 20px;
+}
+
+.features-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (min-width: 600px) {
+  .features-cards {
+    flex-direction: row;
+    justify-content: space-around;
   }
-  
-  h1 {
-    font-size: 24px;
-    color: #3880ff;
-  }
-  
-  p {
-    font-size: 18px;
-    color: #222;
-  }
-  
+}
+
+.benefits-section {
+  margin-bottom: 20px;
+}
+
+.benefits-text {
+  text-align: left;
+
+}

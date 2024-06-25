@@ -39,6 +39,11 @@ const HamburgerMenu: React.FC<HamburgerMenuProps> = ({ onLogout }) => {
                   <IonItem routerLink="/posts">
                     <IonLabel>Foro</IonLabel>
                   </IonItem>
+                  {user && user.role === 'admin' && (
+                        <IonItem routerLink="/manage-users">
+                            <IonLabel>Gestionar Usuarios</IonLabel>
+                        </IonItem>
+                    )}
                   <IonItem button onClick={handleLogout}>
                     <IonLabel>Cerrar Sesión</IonLabel>
                   </IonItem>

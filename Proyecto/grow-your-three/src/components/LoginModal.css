@@ -13,3 +13,36 @@
 input.error {
   border-color: red;
 }
+
+.login-modal .modal-wrapper {
+  max-width: 400px;
+  margin: auto;
+}
+
+.login-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-button, .close-button {
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  .login-modal .modal-wrapper {
+    width: 90%;
+    margin: auto;
+  }
+
+  .login-container {
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .login-button, .close-button {
+    margin-top: 15px;
+  }
+}
+

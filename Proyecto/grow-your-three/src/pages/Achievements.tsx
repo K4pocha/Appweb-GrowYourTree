@@ -1,83 +1,84 @@
 import React, { useState, useEffect } from 'react';
-import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonList, IonItem, IonLabel, IonButton, IonToast } from '@ionic/react';
+import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonList, IonItem, IonLabel, IonImg, IonIcon } from '@ionic/react';
+import { checkmarkCircleOutline } from 'ionicons/icons';
 import { useUser } from '../contexts/UserContext';
-import { Achievement } from '../types';
+import './Achievements.css';
+
+interface Achievement {
+    level: string;
+    description: string;
+    criteria: string;
+    points: number;
+    image: string;
+}
+
+interface Category {
+    category: string;
+    achievements: Achievement[];
+}
 
 const Achievements: React.FC = () => {
-  const { user } = useUser();
-  const [achievements, setAchievements] = useState<Achievement[]>([]);
-  const [showToast, setShowToast] = useState(false);
-  const [toastMessage, setToastMessage] = useState('');
-  const [toastColor, setToastColor] = useState('');
+    const { user } = useUser();
+    const [categories, setCategories] = useState<Category[]>([]);
+    const [userAchievements, setUserAchievements] = useState<string[]>([]);
 
-  useEffect(() => {
-    if (user) {
-      fetch(`http://localhost:5000/users/${user.email}/achievements`)
-        .then(response => response.json())
-        .then(data => setAchievements(data));
-    }
-  }, [user]);
+    useEffect(() => {
+        fetch('http://localhost:5000/achievements')
+            .then(response => response.json())
+            .then(data => setCategories(data))
+            .catch(error => console.error('Error fetching achievements:', error));
+    }, []);
 
-  const handleCompleteAchievement = async (achievementId: string) => {
-    if (!user) return;
+    useEffect(() => {
+        if (user) {
+            fetch(`http://localhost:5000/users/${user.id}/achievements`, {
+                headers: {
+                    'Authorization': `Bearer ${localStorage.getItem('token')}`
+                }
+            })
+            .then(response => response.json())
+            .then(data => setUserAchievements(data))
+            .catch(error => console.error('Error fetching user achievements:', error));
+        }
+    }, [user]);
 
-    const updatedAchievements = achievements.map(a => 
-      a.id === achievementId ? { ...a, completed: true } : a
+    return (
+        <IonPage>
+            <IonHeader>
+                <IonToolbar>
+                    <IonTitle>Logros</IonTitle>
+                </IonToolbar>
+            </IonHeader>
+            <IonContent>
+                {categories.map(category => (
+                    <IonList key={category.category}>
+                        <IonItem>
+                            <IonLabel>
+                                <h2>{category.category}</h2>
+                            </IonLabel>
+                        </IonItem>
+                        {category.achievements.map(achievement => (
+                            <IonItem key={achievement.criteria}>
+                                <IonImg
+                                    src={`/achievements/${achievement.image}`}
+                                    className={`achievement-img ${userAchievements.includes(achievement.criteria) ? '' : 'locked'}`}
+                                    alt={achievement.description}
+                                />
+                                <IonLabel>
+                                    <h3>{achievement.level}</h3>
+                                    <p>{achievement.description}</p>
+                                    <p>{achievement.points} puntos</p>
+                                </IonLabel>
+                                {userAchievements.includes(achievement.criteria) && (
+                                    <IonIcon icon={checkmarkCircleOutline} slot="end" />
+                                )}
+                            </IonItem>
+                        ))}
+                    </IonList>
+                ))}
+            </IonContent>
+        </IonPage>
     );
-
-    const response = await fetch(`http://localhost:5000/users/${user.email}/achievements`, {
-      method: 'PUT',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ achievements: updatedAchievements })
-    });
-
-    if (response.ok) {
-      setAchievements(updatedAchievements);
-      setToastMessage('Logro completado');
-      setToastColor('success');
-    } else {
-      setToastMessage('Error al actualizar el logro');
-      setToastColor('danger');
-    }
-    setShowToast(true);
-  };
-
-  return (
-    <IonPage>
-      <IonHeader>
-        <IonToolbar>
-          <IonTitle>Logros</IonTitle>
-        </IonToolbar>
-      </IonHeader>
-      <IonContent>
-        <IonList>
-          {achievements.map(achievement => (
-            <IonItem key={achievement.id}>
-              <IonLabel>
-                <h2>{achievement.title}</h2>
-                <p>{achievement.description}</p>
-                <p>{achievement.completed ? 'Completado' : 'Por completar'}</p>
-              </IonLabel>
-              {!achievement.completed && (
-                <IonButton onClick={() => handleCompleteAchievement(achievement.id)}>
-                  Completar
-                </IonButton>
-              )}
-            </IonItem>
-          ))}
-        </IonList>
-        <IonToast
-          isOpen={showToast}
-          onDidDismiss={() => setShowToast(false)}
-          message={toastMessage}
-          duration={2000}
-          color={toastColor}
-        />
-      </IonContent>
-    </IonPage>
-  );
 };
 
 export default Achievements;
