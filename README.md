@@ -96,13 +96,6 @@ La aplicación implementa varias medidas de seguridad:
 - **Roles y Permisos**: Los roles de usuario y administrador aseguran que solo los usuarios autorizados puedan realizar ciertas acciones.
 - **Variables de Entorno**: Se utilizan variables de entorno para proteger datos sensibles como la URI de MongoDB y el secreto JWT.
 
-## Próximos Pasos (Actualizaciones futuras pendientes)
-
-- Migrar de archivos JSON a una base de datos como MongoDB.
-- Implementar autenticación y autorización con JWT.
-- Añadir encriptación de contraseñas utilizando bcrypt.
-- Mejorar la seguridad implementando CAPTCHA en formularios de registro e inicio de sesión.
-- Implementar gestión de roles (usuario y administrador).
 
 ## Contribuciones
 
