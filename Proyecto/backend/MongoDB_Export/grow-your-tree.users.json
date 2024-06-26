@@ -1,0 +1,56 @@
+[{
+  "_id": {
+    "$oid": "667ac92bd7595c1d3da891fb"
+  },
+  "id": "348a8bfa-d013-4bd4-91a8-18ab705cf53c",
+  "name": "Nicolas",
+  "nickname": "Kapocha",
+  "email": "nico@gmail.com",
+  "password": "$2a$10$9m7nNT7LQsRLa2HsixdlEe6cKeNEeYpFbxA0EjwGF3j0HgIQ5lXy.",
+  "role": "admin",
+  "achievements": [
+    "bike_to_work_day",
+    "bike_to_work_month",
+    "bike_to_work_six_months",
+    "public_transport_day",
+    "public_transport_month",
+    "public_transport_six_months",
+    "recycle_plastic_day",
+    "recycle_plastic_month",
+    "recycle_plastic_six_months",
+    "buy_local_day",
+    "buy_local_month",
+    "buy_local_six_months",
+    "reduce_energy_day",
+    "reduce_energy_month",
+    "reduce_energy_six_months",
+    "use_led_day",
+    "use_led_month",
+    "use_led_six_months"
+  ],
+  "points": 10
+},
+{
+  "_id": {
+    "$oid": "667acd6b1d746ac6ecc8127e"
+  },
+  "id": "367e8b87-719c-4cbd-9aba-0077c48be829",
+  "name": "Nidia",
+  "nickname": "pepi",
+  "email": "pepi@gmail.com",
+  "password": "$2a$10$a7dt9Ff5vRYr8yQuiU7Rj.vJi7py8vZJTPFF2XNRxBTL/f4vA1c4W",
+  "role": "user",
+  "achievements": []
+},
+{
+  "_id": {
+    "$oid": "667ae1a8ed99a13558496ff9"
+  },
+  "id": "eba8c789-109f-4c57-b74d-25d1ad8c17ac",
+  "name": "Nicolas",
+  "nickname": "Nico",
+  "email": "test@gmail.com",
+  "password": "$2a$10$JRzvQgTDiOetxmaQqRj0f.2LD6Qo1OzoSrGCC6bWr1kP5QdEP.CnW",
+  "role": "user",
+  "achievements": []
+}]

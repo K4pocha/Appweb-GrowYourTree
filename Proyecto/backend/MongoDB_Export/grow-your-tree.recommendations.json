@@ -1,0 +1,42 @@
+[{
+  "_id": {
+    "$oid": "667af0a35557adc4c01ee250"
+  },
+  "title": "Usa Transporte Público",
+  "content": "Utiliza el transporte público en lugar de tu coche privado para reducir las emisiones de carbono."
+},
+{
+  "_id": {
+    "$oid": "667af0a35557adc4c01ee251"
+  },
+  "title": "Ahorra Energía",
+  "content": "Apaga las luces y los dispositivos electrónicos cuando no los estés usando."
+},
+{
+  "_id": {
+    "$oid": "667af0a35557adc4c01ee252"
+  },
+  "title": "Recicla",
+  "content": "Recicla tus residuos domésticos para ayudar a reducir la cantidad de basura en los vertederos."
+},
+{
+  "_id": {
+    "$oid": "667af0a35557adc4c01ee253"
+  },
+  "title": "Consume Productos Locales",
+  "content": "Compra productos locales para reducir las emisiones de carbono asociadas con el transporte de mercancías."
+},
+{
+  "_id": {
+    "$oid": "667af0a35557adc4c01ee254"
+  },
+  "title": "Reduce el Uso de Plásticos",
+  "content": "Utiliza bolsas reutilizables y evita el uso de plásticos de un solo uso."
+},
+{
+  "_id": {
+    "$oid": "667af0a35557adc4c01ee255"
+  },
+  "title": "Planta Árboles",
+  "content": "Planta árboles en tu comunidad para ayudar a absorber el CO2 de la atmósfera."
+}]

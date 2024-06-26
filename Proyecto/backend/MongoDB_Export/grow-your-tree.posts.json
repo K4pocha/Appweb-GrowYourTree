@@ -1,0 +1,118 @@
+[{
+  "_id": {
+    "$oid": "667ae5abed99a13558496ffa"
+  },
+  "title": "Test post",
+  "content": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\"",
+  "section": "ahorro-de-energía",
+  "userId": "348a8bfa-d013-4bd4-91a8-18ab705cf53c",
+  "id": "6aea64f5-55d9-4044-bef8-a5769bd6fdf4",
+  "nickname": null,
+  "likes": [],
+  "dislikes": [],
+  "comments": [
+    {
+      "id": "9a1afcbd-e5a0-4dd2-8c9d-60b0570869ad",
+      "userId": "348a8bfa-d013-4bd4-91a8-18ab705cf53c",
+      "nickname": null,
+      "content": "Test comentario",
+      "createdAt": {
+        "$date": "2024-06-25T15:43:46.172Z"
+      }
+    }
+  ],
+  "deleted": false,
+  "deletedBy": null
+},
+{
+  "_id": {
+    "$oid": "667ae6254e7018bce5afd449"
+  },
+  "title": "Test 2 ",
+  "content": "testing",
+  "section": "consumo-responsable",
+  "userId": "348a8bfa-d013-4bd4-91a8-18ab705cf53c",
+  "id": "831b1571-fc3c-401d-a9d4-d65b040b8813",
+  "nickname": "Kapocha",
+  "likes": [],
+  "dislikes": [
+    "348a8bfa-d013-4bd4-91a8-18ab705cf53c"
+  ],
+  "comments": [
+    {
+      "id": "260b6445-cd47-415f-b5b1-04d0fc2b73a5",
+      "userId": "348a8bfa-d013-4bd4-91a8-18ab705cf53c",
+      "nickname": "Kapocha",
+      "content": "SIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII AL FIN SE VE EL USUARIOOOOOOOOOOO",
+      "createdAt": {
+        "$date": "2024-06-25T15:46:11.316Z"
+      }
+    },
+    {
+      "id": "0f4bc3c6-ae32-410d-93e9-fd840f003eff",
+      "userId": "367e8b87-719c-4cbd-9aba-0077c48be829",
+      "nickname": "pepi",
+      "content": "AL FIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIN FUNCIONAAAAAAAAAAAAAAAAAAAAAAA",
+      "createdAt": {
+        "$date": "2024-06-25T15:46:33.631Z"
+      }
+    },
+    {
+      "id": "e398914a-2695-48aa-a412-17d148c0bd71",
+      "userId": "348a8bfa-d013-4bd4-91a8-18ab705cf53c",
+      "nickname": "Kapocha",
+      "content": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\"",
+      "createdAt": {
+        "$date": "2024-06-25T15:49:04.772Z"
+      }
+    }
+  ],
+  "deleted": false,
+  "deletedBy": null
+},
+{
+  "_id": {
+    "$oid": "667ae6dc4e7018bce5afd44a"
+  },
+  "title": "Test Movilidad Sostenible",
+  "content": "\"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?\"",
+  "section": "movilidad-sostenible",
+  "userId": "367e8b87-719c-4cbd-9aba-0077c48be829",
+  "id": "8b761f76-a035-4f5a-8c35-fea8c14fc10c",
+  "nickname": "pepi",
+  "likes": [
+    "348a8bfa-d013-4bd4-91a8-18ab705cf53c"
+  ],
+  "dislikes": [],
+  "comments": [
+    {
+      "id": "1714256d-0c05-4eb0-b536-d1cb7881b1ba",
+      "userId": "367e8b87-719c-4cbd-9aba-0077c48be829",
+      "nickname": "pepi",
+      "content": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\"",
+      "createdAt": {
+        "$date": "2024-06-25T15:48:50.493Z"
+      }
+    },
+    {
+      "id": "4e4b095b-75e1-4925-b312-05751028ca4e",
+      "userId": "348a8bfa-d013-4bd4-91a8-18ab705cf53c",
+      "nickname": "Kapocha",
+      "content": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\"",
+      "createdAt": {
+        "$date": "2024-06-25T15:49:16.159Z"
+      }
+    },
+    {
+      "id": "336a6f96-e7f1-473b-b5d3-f13f0280b6ef",
+      "userId": "348a8bfa-d013-4bd4-91a8-18ab705cf53c",
+      "nickname": "Kapocha",
+      "content": "a",
+      "createdAt": {
+        "$date": "2024-06-25T15:51:41.974Z"
+      }
+    }
+  ],
+  "deleted": false,
+  "deletedBy": null
+}]
